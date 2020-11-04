@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<extension key="nz.co.fuzion.historicmembershipdata" type="module">
+  <file>historicmembershipdata</file>
+  <name>Historic Membership Data</name>
+  <description>Provide custom search to find members from a date in the past</description>
+  <license>AGPL-3.0</license>
+  <maintainer>
+    <author>Jitendra Purohit</author>
+    <email>jitendra@fuzion.co.nz</email>
+  </maintainer>
+  <urls>
+    <url desc="Main Extension Page">http://FIXME</url>
+    <url desc="Documentation">http://FIXME</url>
+    <url desc="Support">http://FIXME</url>
+    <url desc="Licensing">http://www.gnu.org/licenses/agpl-3.0.html</url>
+  </urls>
+  <releaseDate>2020-07-28</releaseDate>
+  <version>1.0</version>
+  <develStage>alpha</develStage>
+  <compatibility>
+    <ver>5.0</ver>
+  </compatibility>
+  <comments>This is a new, undeveloped module</comments>
+  <classloader>
+    <psr4 prefix="Civi\" path="Civi"/>
+  </classloader>
+  <civix>
+    <namespace>CRM/Historicmembershipdata</namespace>
+  </civix>
+</extension>
