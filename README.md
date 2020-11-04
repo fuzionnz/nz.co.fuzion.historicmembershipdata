@@ -1,15 +1,15 @@
 # nz.co.fuzion.historicmembershipdata
 
-![Screenshot](/images/screenshot.png)
+![Screenshot](/images/search.jpg)
 
-(*FIXME: In one or two paragraphs, describe what the extension does and why one would download it. *)
+Provide a new search form which allows you to search for members that were active on a specific date in the past. Eg Find all the members that were active at the start of this year.
 
 The extension is licensed under [AGPL-3.0](LICENSE.txt).
 
 ## Requirements
 
 * PHP v7.0+
-* CiviCRM (*FIXME: Version number*)
+* CiviCRM
 
 ## Installation (Web UI)
 
@@ -22,7 +22,7 @@ install it with the command-line tool [cv](https://github.com/civicrm/cv).
 
 ```bash
 cd <extension-dir>
-cv dl nz.co.fuzion.historicmembershipdata@https://github.com/FIXME/nz.co.fuzion.historicmembershipdata/archive/master.zip
+cv dl nz.co.fuzion.historicmembershipdata@https://github.com/fuzionnz/nz.co.fuzion.historicmembershipdata/archive/master.zip
 ```
 
 ## Installation (CLI, Git)
@@ -37,8 +37,7 @@ cv en historicmembershipdata
 
 ## Usage
 
-(* FIXME: Where would a new user navigate to get started? What changes would they see? *)
+- Install the ext and navigate to Search => Custom Searches
+- Find the search form with the name `PastMembersearch (nz.co.fuzion.historicmembershipdata)`.
+- Enter the date in the Active On field. Hit search.
 
-## Known Issues
-
-(* FIXME *)
