@@ -5,6 +5,10 @@ use CRM_Historicmembershipdata_ExtensionUtil as E;
  * A custom contact search
  */
 class CRM_Historicmembershipdata_Form_Search_PastMembersearch extends CRM_Contact_Form_Search_Custom_Base implements CRM_Contact_Form_Search_Interface {
+
+  /**
+   * Class constructor.
+   */
   function __construct(&$formValues) {
     parent::__construct($formValues);
   }
@@ -70,10 +74,11 @@ class CRM_Historicmembershipdata_Form_Search_PastMembersearch extends CRM_Contac
   /**
    * Construct a SQL SELECT clause
    *
-   * @return string, sql fragment with SELECT arguments
+   * @return string
+   *  sql fragment with SELECT arguments
    */
   function select() {
-    return "
+    return " DISTINCT
       contact_a.id           as contact_id  ,
       contact_a.contact_type as contact_type,
       contact_a.sort_name    as sort_name,
@@ -84,7 +89,8 @@ class CRM_Historicmembershipdata_Form_Search_PastMembersearch extends CRM_Contac
   /**
    * Construct a SQL FROM clause
    *
-   * @return string, sql fragment with FROM and JOIN clauses
+   * @return string
+   *  sql fragment with FROM and JOIN clauses
    */
   function from() {
     return "FROM civicrm_contact contact_a
@@ -96,7 +102,8 @@ class CRM_Historicmembershipdata_Form_Search_PastMembersearch extends CRM_Contac
    * Construct a SQL WHERE clause
    *
    * @param bool $includeContactIDs
-   * @return string, sql fragment with conditional expressions
+   * @return string
+   *  sql fragment with conditional expressions
    */
   function where($includeContactIDs = FALSE) {
     $params = [];
